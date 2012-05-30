@@ -95,7 +95,7 @@ sub logdie {
 
 sub runcmd {
 	logwrite("Running:", @_) if $verbose;
-	#return system(@_);
+	return system(@_);
 }
 
 my %opt = (
